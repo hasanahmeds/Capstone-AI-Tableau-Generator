@@ -10,30 +10,6 @@ Original file is located at
 """
 resilience.py  (Error handling with retries + fallbacks FOR dashboard_analyzer.py)
 
-✅ This version is designed to be CALLED by DashboardAnalyzer.
-- Works for file loading: CSV (UTF-8 → Latin-1), Excel (default → openpyxl)
-- Provides a generic retry() with exponential backoff + jitter
-- Provides an LLM wrapper that matches DashboardAnalyzer._call_llm usage:
-    resilient_json_llm_call(...)
-    - retries transient errors
-    - optional cache fallback
-    - optional "return {}" fallback so analyzer can continue
-
-How to use in dashboard_analyzer.py:
------------------------------------
-from resilience import (
-    safe_read_csv_with_fallbacks,
-    safe_read_excel_with_fallbacks,
-    retry,
-    RetryPolicy,
-    resilient_json_llm_call,
-)
-
-Then:
-- In load_data(): replace pd.read_csv/read_excel with safe_read_...()
-- In _call_llm(): wrap the OpenAI call with resilient_json_llm_call()
-"""
-
 from __future__ import annotations
 
 import json
