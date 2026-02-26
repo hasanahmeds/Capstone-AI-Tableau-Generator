@@ -1,0 +1,139 @@
+{
+  "analysis": {
+    "dataset_domain": "Unknown (rule-based fallback)",
+    "dataset_description": "Dataset with 9800 rows and 18 columns.",
+    "grain": "One row per record (9800 total rows)",
+    "time_coverage": {
+      "has_time_dimension": true,
+      "time_column": "Order Date",
+      "estimated_range": "2015-2018"
+    },
+    "key_entities": [
+      {
+        "entity_name": "Row",
+        "id_column": "Row ID",
+        "name_column": null,
+        "estimated_cardinality": "~9800 unique"
+      },
+      {
+        "entity_name": "Order",
+        "id_column": "Order ID",
+        "name_column": null,
+        "estimated_cardinality": "~4922 unique"
+      }
+    ],
+    "column_roles": {
+      "dimensions": [
+        "Ship Mode",
+        "Customer ID",
+        "Customer Name",
+        "Segment",
+        "Country",
+        "City",
+        "State",
+        "Postal Code",
+        "Region",
+        "Product ID",
+        "Category",
+        "Sub-Category",
+        "Product Name"
+      ],
+      "measures": [
+        "Sales"
+      ],
+      "temporal": [
+        "Order Date",
+        "Ship Date"
+      ],
+      "identifiers": [
+        "Row ID",
+        "Order ID"
+      ],
+      "geographic": [
+        "Country",
+        "City",
+        "State",
+        "Postal Code",
+        "Region"
+      ]
+    },
+    "notable_observations": [
+      "Shape: 9800 rows \u00d7 18 columns",
+      "Measures: ['Sales']",
+      "Temporal: ['Order Date', 'Ship Date']"
+    ]
+  },
+  "recommended_kpis": {
+    "primary_kpis": [
+      {
+        "name": "Total Sales",
+        "formula": "SUM([Sales])",
+        "source_columns": [
+          "Sales"
+        ],
+        "format": "$#,##0",
+        "business_rationale": "Aggregate view of Sales."
+      },
+      {
+        "name": "Total Records",
+        "formula": "COUNT([Row ID])",
+        "source_columns": [
+          "Row ID"
+        ],
+        "format": "#,##0",
+        "business_rationale": "Overall transaction volume."
+      }
+    ],
+    "secondary_metrics": [
+      {
+        "name": "Average Sales",
+        "formula": "AVG([Sales])",
+        "source_columns": [
+          "Sales"
+        ],
+        "format": "#,##0.00",
+        "business_rationale": "Per-record average of Sales."
+      }
+    ],
+    "trend_metrics": [
+      {
+        "name": "Monthly Sales Trend",
+        "formula": "SUM([Sales])",
+        "time_grain": "month",
+        "source_columns": [
+          "Order Date",
+          "Sales"
+        ]
+      }
+    ],
+    "comparative_metrics": [
+      {
+        "name": "Sales by Ship Mode",
+        "measure": "SUM([Sales])",
+        "compare_by": "Ship Mode",
+        "source_columns": [
+          "Ship Mode",
+          "Sales"
+        ]
+      },
+      {
+        "name": "Sales by Customer ID",
+        "measure": "SUM([Sales])",
+        "compare_by": "Customer ID",
+        "source_columns": [
+          "Customer ID",
+          "Sales"
+        ]
+      },
+      {
+        "name": "Sales by Customer Name",
+        "measure": "SUM([Sales])",
+        "compare_by": "Customer Name",
+        "source_columns": [
+          "Customer Name",
+          "Sales"
+        ]
+      }
+    ]
+  }
+}
