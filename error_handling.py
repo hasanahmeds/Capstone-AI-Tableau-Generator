@@ -129,18 +129,7 @@ def resilient_json_llm_call(
     cache_set: Optional[Callable[[dict], None]] = None,
     fallback_empty_json: bool = False,
 ) -> dict:
-    """
-    call_provider(): should return the provider response object OR a raw string JSON.
-    This function returns a parsed JSON dict.
-
-    Behavior:
-    - Retries transient errors using retry()
-    - Parses JSON (strips ``` fences)
-    - If all retries fail:
-        - returns cached JSON if available
-        - else returns {} if fallback_empty_json=True
-        - else re-raises the error
-    """
+    
     policy = policy or RetryPolicy(
         max_attempts=3,
         base_delay_s=1.0,
