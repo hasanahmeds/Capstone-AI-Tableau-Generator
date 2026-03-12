@@ -12,7 +12,13 @@ Hasan: DashboardAnalyzer class with methods: analyze(), recommend_kpis(). LLM pr
 Renuka: Error handling with retries and fallbacks
 Shyam: Unit tests with mocked API responses
 
-Next Week Goals :
+Week 5 Deliverables  :
 - Hasan: Visualization Recommender class with recommendation rules
 - Renuka: Pydantic schemas: Visualization Spec, Recommendation Result
 - Shyam: Tests covering diverse data scenarios
+
+Week 6 Deliverables :
+- Hasan: TableauWorkbookGenerator class, XML generation using lxml or ElementTree
+- Renuka: Pydantic schemas - WorkbookSpec, DashboardSpec, WorksheetSpec
+- Shyam: Testing - Generated files are valid Tableau workbooks
+
