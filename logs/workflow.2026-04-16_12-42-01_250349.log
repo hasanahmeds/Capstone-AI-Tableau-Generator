@@ -1,0 +1,132 @@
+2026-04-16 12:42:01 | WARNING  | workflow — Could not save graph PNG: %s
+2026-04-16 12:42:01 | INFO     | workflow — validate_node: starting data validation
+2026-04-16 12:42:04 | INFO     | workflow — validate_node: rows=%d  cols=%d  quality=%.1f
+2026-04-16 12:42:04 | INFO     | workflow — profile_node: building column profiles
+2026-04-16 12:42:04 | INFO     | workflow — profile_node: profiled %d columns
+2026-04-16 12:42:04 | INFO     | workflow — analyze_node: running analysis
+2026-04-16 12:42:05 | INFO     | workflow — analyze_node: found %d KPIs, domain=%s
+2026-04-16 12:42:05 | INFO     | workflow — recommend_node: selecting visualizations
+2026-04-16 12:42:05 | INFO     | workflow — recommend_node: recommended %d charts (baseline + %d from analyzer KPIs)
+2026-04-16 12:42:05 | INFO     | workflow — generate_node: building workbook
+2026-04-16 12:42:05 | INFO     | workflow — generate_node: .twb written to %s
+2026-04-16 12:42:08 | INFO     | workflow — generate_node: .twbx written to %s
+2026-04-16 12:42:08 | INFO     | workflow — generate_node: workbook written to %s
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrapping up
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 12:42:08 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 12:42:09 | INFO     | workflow — finalize_node: status=%s  errors=%d
+2026-04-16 13:03:33 | WARNING  | workflow — Could not save graph PNG: %s
+2026-04-16 13:03:33 | INFO     | workflow — validate_node: starting data validation
+2026-04-16 13:03:36 | INFO     | workflow — validate_node: rows=%d  cols=%d  quality=%.1f
+2026-04-16 13:03:36 | INFO     | workflow — profile_node: building column profiles
+2026-04-16 13:03:37 | INFO     | workflow — profile_node: profiled %d columns
+2026-04-16 13:03:37 | INFO     | workflow — analyze_node: running analysis
+2026-04-16 13:03:37 | INFO     | workflow — analyze_node: found %d KPIs, domain=%s
+2026-04-16 13:03:37 | INFO     | workflow — recommend_node: selecting visualizations
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: skipping '%s by %s' — dim is identifier or cardinality too high
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: skipping '%s by %s' — dim is identifier or cardinality too high
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: skipping distribution of '%s' — identifier column
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: skipping distribution of '%s' — identifier column
+2026-04-16 13:03:38 | INFO     | workflow — recommend_node: recommended %d charts — breakdown: %s
+2026-04-16 13:03:38 | INFO     | workflow — generate_node: building workbook
+2026-04-16 13:03:38 | INFO     | workflow — generate_node: .twb written to %s
+2026-04-16 13:03:39 | INFO     | workflow — generate_node: .twbx written to %s
+2026-04-16 13:03:39 | INFO     | workflow — generate_node: workbook written to %s
+2026-04-16 13:03:39 | INFO     | workflow — finalize_node: wrapping up
+2026-04-16 13:03:39 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:03:39 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:03:39 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:03:40 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:03:40 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:03:40 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:03:40 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:03:40 | INFO     | workflow — finalize_node: status=%s  errors=%d
+2026-04-16 13:26:43 | WARNING  | workflow — Could not save graph PNG: %s
+2026-04-16 13:26:43 | INFO     | workflow — validate_node: starting data validation
+2026-04-16 13:26:46 | INFO     | workflow — validate_node: rows=%d  cols=%d  quality=%.1f
+2026-04-16 13:26:46 | INFO     | workflow — profile_node: building column profiles
+2026-04-16 13:26:47 | INFO     | workflow — profile_node: profiled %d columns
+2026-04-16 13:26:47 | INFO     | workflow — analyze_node: running analysis
+2026-04-16 13:26:47 | INFO     | workflow — analyze_node: found %d KPIs, domain=%s
+2026-04-16 13:26:47 | INFO     | workflow — recommend_node: selecting visualizations
+2026-04-16 13:26:47 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:26:47 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:26:47 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:26:47 | INFO     | workflow — recommend_node: skipping '%s by %s' — identifier column
+2026-04-16 13:26:47 | INFO     | workflow — recommend_node: skipping distribution of '%s' — identifier column
+2026-04-16 13:26:47 | INFO     | workflow — recommend_node: recommended %d charts — breakdown: %s
+2026-04-16 13:26:47 | INFO     | workflow — generate_node: building workbook
+2026-04-16 13:26:48 | INFO     | workflow — generate_node: .twb written to %s
+2026-04-16 13:26:49 | INFO     | workflow — generate_node: .twbx written to %s
+2026-04-16 13:26:49 | INFO     | workflow — generate_node: workbook written to %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrapping up
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:26:49 | INFO     | workflow — finalize_node: status=%s  errors=%d
+2026-04-16 13:32:53 | WARNING  | workflow — Could not save graph PNG: %s
+2026-04-16 13:32:53 | INFO     | workflow — validate_node: starting data validation
+2026-04-16 13:32:56 | INFO     | workflow — validate_node: rows=%d  cols=%d  quality=%.1f
+2026-04-16 13:32:57 | INFO     | workflow — profile_node: building column profiles
+2026-04-16 13:32:57 | INFO     | workflow — profile_node: profiled %d columns
+2026-04-16 13:32:57 | INFO     | workflow — analyze_node: running analysis
+2026-04-16 13:32:57 | INFO     | workflow — analyze_node: found %d KPIs, domain=%s
+2026-04-16 13:32:57 | INFO     | workflow — recommend_node: selecting visualizations
+2026-04-16 13:32:57 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:32:57 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:32:57 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:32:57 | INFO     | workflow — recommend_node: skipping '%s by %s' — identifier column
+2026-04-16 13:32:57 | INFO     | workflow — recommend_node: skipping distribution of '%s' — identifier column
+2026-04-16 13:32:57 | INFO     | workflow — recommend_node: recommended %d charts — breakdown: %s
+2026-04-16 13:32:57 | INFO     | workflow — generate_node: building workbook
+2026-04-16 13:32:58 | INFO     | workflow — generate_node: .twb written to %s
+2026-04-16 13:32:59 | INFO     | workflow — generate_node: .twbx written to %s
+2026-04-16 13:32:59 | INFO     | workflow — generate_node: workbook written to %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrapping up
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:32:59 | INFO     | workflow — finalize_node: status=%s  errors=%d
+2026-04-16 13:41:29 | WARNING  | workflow — Could not save graph PNG: %s
+2026-04-16 13:41:30 | INFO     | workflow — validate_node: starting data validation
+2026-04-16 13:41:33 | INFO     | workflow — validate_node: rows=%d  cols=%d  quality=%.1f
+2026-04-16 13:41:33 | INFO     | workflow — profile_node: building column profiles
+2026-04-16 13:41:33 | INFO     | workflow — profile_node: profiled %d columns
+2026-04-16 13:41:33 | INFO     | workflow — analyze_node: running analysis
+2026-04-16 13:41:34 | INFO     | workflow — analyze_node: found %d KPIs, domain=%s
+2026-04-16 13:41:34 | INFO     | workflow — recommend_node: selecting visualizations
+2026-04-16 13:41:34 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:41:34 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:41:34 | INFO     | workflow — recommend_node: dropping baseline '%s' — uses identifier column
+2026-04-16 13:41:34 | INFO     | workflow — recommend_node: skipping '%s by %s' — identifier column
+2026-04-16 13:41:34 | INFO     | workflow — recommend_node: skipping distribution of '%s' — identifier column
+2026-04-16 13:41:34 | INFO     | workflow — recommend_node: recommended %d charts — breakdown: %s
+2026-04-16 13:41:34 | INFO     | workflow — generate_node: building workbook
+2026-04-16 13:41:34 | INFO     | workflow — generate_node: .twb written to %s
+2026-04-16 13:41:35 | INFO     | workflow — generate_node: .twbx written to %s
+2026-04-16 13:41:35 | INFO     | workflow — generate_node: workbook written to %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrapping up
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: wrote %s
+2026-04-16 13:41:35 | INFO     | workflow — finalize_node: status=%s  errors=%d

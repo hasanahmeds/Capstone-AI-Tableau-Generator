@@ -1,0 +1,194 @@
+2026-04-22 18:00:00 | ERROR    | app — Pipeline crashed
+Traceback (most recent call last):
+
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000024EADAE23E0>
+    └ <Thread(ScriptRunner.scriptThread, started 35252)>
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000024EADAE2160>
+    └ <Thread(ScriptRunner.scriptThread, started 35252)>
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ScriptRunner.scriptThread, started 35252)>
+    │    │        │    └ ()
+    │    │        └ <Thread(ScriptRunner.scriptThread, started 35252)>
+    │    └ <bound method ScriptRunner._run_script_thread of ScriptRunner(_session_id='3e2bb74b-2a6b-4833-9701-c5366dd366ea', _main_scrip...
+    └ <Thread(ScriptRunner.scriptThread, started 35252)>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 379, in _run_script_thread
+    self._run_script(request.rerun_data)
+    │    │           │       └ <property object at 0x0000024EAE4551C0>
+    │    │           └ ScriptRequest(type=<ScriptRequestType.RERUN: 'RERUN'>, _rerun_data=RerunData(widget_states=widgets {
+    │    │               id: "$$ID-6f37d4192010...
+    │    └ <function ScriptRunner._run_script at 0x0000024EAE5C89A0>
+    └ ScriptRunner(_session_id='3e2bb74b-2a6b-4833-9701-c5366dd366ea', _main_script_path='C:\\Users\\shaik\\Desktop\\Course Materia...
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 705, in _run_script
+    ) = exec_func_with_error_handling(code_to_exec, ctx)
+        │                             │             └ ScriptRunContext(session_id='3e2bb74b-2a6b-4833-9701-c5366dd366ea', _enqueue=<bound method ScriptRunner._enqueue_forward_msg ...
+        │                             └ <function ScriptRunner._run_script.<locals>.code_to_exec at 0x0000024EE1673920>
+        └ <function exec_func_with_error_handling at 0x0000024EAE574040>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             └ <function ScriptRunner._run_script.<locals>.code_to_exec at 0x0000024EE1673920>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 689, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+         │     │      └ <member '__dict__' of 'module' objects>
+         │     └ <module '__main__' from 'C:\\Users\\shaik\\Desktop\\Course Material\\Semester3\\CS896_Data_Science_Capstone_Project\\Project_...
+         └ <code object <module> at 0x0000024EAF230C30, file "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capsto...
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\app.py", line 631, in <module>
+    main()
+    └ <function main at 0x0000024EE16702C0>
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\app.py", line 622, in main
+    page_process()
+    └ <function page_process at 0x0000024EE1672660>
+
+> File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\app.py", line 414, in page_process
+    result = wf.run_step_by_step(
+             │  └ <function DashboardGeneratorWorkflow.run_step_by_step at 0x0000024EE14A9940>
+             └ <scripts.workflow.DashboardGeneratorWorkflow object at 0x0000024EAEEA52B0>
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\scripts\workflow.py", line 1207, in run_step_by_step
+    for step_output in self._app.stream(initial_state):
+        │              │    │    │      └ {'run_id': '720a72d6-9cc1-4f96-92e3-9fa2540e0021', 'file_path': 'C:\\Users\\shaik\\AppData\\Local\\Temp\\tableau_gen_2fk16p_1...
+        │              │    │    └ <function Pregel.stream at 0x0000024EE1460CC0>
+        │              │    └ <langgraph.graph.state.CompiledStateGraph object at 0x0000024EAEEA5160>
+        │              └ <scripts.workflow.DashboardGeneratorWorkflow object at 0x0000024EAEEA52B0>
+        └ {'recommend': {'dashboard_spec': {'name': 'Auto Generated Dashboard', 'visuals': [{'chart_type': 'line', 'title': 'Monthly Sa...
+
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+        │    │      └ <function PregelRunner.tick at 0x0000024EE1456840>
+        │    └ <langgraph.pregel._runner.PregelRunner object at 0x0000024EE145FA10>
+        └ None
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+    └ <function run_with_retry at 0x0000024EE1456020>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           │    │           │    │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+           │    │           │    └ <member 'input' of 'PregelExecutableTask' objects>
+           │    │           └ PregelExecutableTask(name='generate', input={'run_id': '720a72d6-9cc1-4f96-92e3-9fa2540e0021', 'file_path': 'C:\\Users\\shaik...
+           │    └ <member 'proc' of 'PregelExecutableTask' objects>
+           └ PregelExecutableTask(name='generate', input={'run_id': '720a72d6-9cc1-4f96-92e3-9fa2540e0021', 'file_path': 'C:\\Users\\shaik...
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            │       │   │    │       │      │         └ {}
+            │       │   │    │       │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+            │       │   │    │       └ {'run_id': '720a72d6-9cc1-4f96-92e3-9fa2540e0021', 'file_path': 'C:\\Users\\shaik\\AppData\\Local\\Temp\\tableau_gen_2fk16p_1...
+            │       │   │    └ <function RunnableCallable.invoke at 0x0000024EE1394C20>
+            │       │   └ generate(tags=None, recurse=True, explode_args=False, func_accepts={})
+            │       └ <method 'run' of '_contextvars.Context' objects>
+            └ <_contextvars.Context object at 0x0000024EE1649E80>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          │    │     │       └ {}
+          │    │     └ ({'run_id': '720a72d6-9cc1-4f96-92e3-9fa2540e0021', 'file_path': 'C:\\Users\\shaik\\AppData\\Local\\Temp\\tableau_gen_2fk16p_...
+          │    └ <function generate_node at 0x0000024EE14A93A0>
+          └ generate(tags=None, recurse=True, explode_args=False, func_accepts={})
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\scripts\workflow.py", line 757, in generate_node
+    from scripts.tableau_workbook_generator import TableauWorkbookGenerator
+
+ModuleNotFoundError: No module named 'scripts.tableau_workbook_generator'
+During task with name 'generate' and id '643104e5-7bcb-cd64-932a-9dbbbae9460c'
+2026-04-22 18:00:36 | ERROR    | app — Pipeline crashed
+Traceback (most recent call last):
+
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1015, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x00000237198B23E0>
+    └ <Thread(ScriptRunner.scriptThread, started 44544)>
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x00000237198B2160>
+    └ <Thread(ScriptRunner.scriptThread, started 44544)>
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ScriptRunner.scriptThread, started 44544)>
+    │    │        │    └ ()
+    │    │        └ <Thread(ScriptRunner.scriptThread, started 44544)>
+    │    └ <bound method ScriptRunner._run_script_thread of ScriptRunner(_session_id='b67afa5a-5ae7-4ca6-882d-83f4a68b36a5', _main_scrip...
+    └ <Thread(ScriptRunner.scriptThread, started 44544)>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 379, in _run_script_thread
+    self._run_script(request.rerun_data)
+    │    │           │       └ <property object at 0x000002371A225170>
+    │    │           └ ScriptRequest(type=<ScriptRequestType.RERUN: 'RERUN'>, _rerun_data=RerunData(widget_states=widgets {
+    │    │               id: "$$ID-6f37d4192010...
+    │    └ <function ScriptRunner._run_script at 0x000002371A3989A0>
+    └ ScriptRunner(_session_id='b67afa5a-5ae7-4ca6-882d-83f4a68b36a5', _main_script_path='C:\\Users\\shaik\\Desktop\\Course Materia...
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 705, in _run_script
+    ) = exec_func_with_error_handling(code_to_exec, ctx)
+        │                             │             └ ScriptRunContext(session_id='b67afa5a-5ae7-4ca6-882d-83f4a68b36a5', _enqueue=<bound method ScriptRunner._enqueue_forward_msg ...
+        │                             └ <function ScriptRunner._run_script.<locals>.code_to_exec at 0x000002374D476A20>
+        └ <function exec_func_with_error_handling at 0x000002371A344040>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             └ <function ScriptRunner._run_script.<locals>.code_to_exec at 0x000002374D476A20>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 689, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+         │     │      └ <member '__dict__' of 'module' objects>
+         │     └ <module '__main__' from 'C:\\Users\\shaik\\Desktop\\Course Material\\Semester3\\CS896_Data_Science_Capstone_Project\\Project_...
+         └ <code object <module> at 0x000002371B66E3B0, file "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capsto...
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\app.py", line 631, in <module>
+    main()
+    └ <function main at 0x000002374D475F80>
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\app.py", line 622, in main
+    page_process()
+    └ <function page_process at 0x000002374D476660>
+
+> File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\app.py", line 414, in page_process
+    result = wf.run_step_by_step(
+             │  └ <function DashboardGeneratorWorkflow.run_step_by_step at 0x000002374D2A1300>
+             └ <scripts.workflow.DashboardGeneratorWorkflow object at 0x000002371AC712B0>
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\scripts\workflow.py", line 1207, in run_step_by_step
+    for step_output in self._app.stream(initial_state):
+        │              │    │    │      └ {'run_id': '93dbd933-e0c1-4fee-8982-b58fa447b69a', 'file_path': 'C:\\Users\\shaik\\AppData\\Local\\Temp\\tableau_gen_hituwy0j...
+        │              │    │    └ <function Pregel.stream at 0x000002374D25C680>
+        │              │    └ <langgraph.graph.state.CompiledStateGraph object at 0x000002371AC71160>
+        │              └ <scripts.workflow.DashboardGeneratorWorkflow object at 0x000002371AC712B0>
+        └ {'recommend': {'dashboard_spec': {'name': 'Auto Generated Dashboard', 'visuals': [{'chart_type': 'line', 'title': 'Monthly Sa...
+
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+        │    │      └ <function PregelRunner.tick at 0x000002374D24E200>
+        │    └ <langgraph.pregel._runner.PregelRunner object at 0x000002374D25BA10>
+        └ None
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+    └ <function run_with_retry at 0x000002374D24D9E0>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           │    │           │    │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+           │    │           │    └ <member 'input' of 'PregelExecutableTask' objects>
+           │    │           └ PregelExecutableTask(name='generate', input={'run_id': '93dbd933-e0c1-4fee-8982-b58fa447b69a', 'file_path': 'C:\\Users\\shaik...
+           │    └ <member 'proc' of 'PregelExecutableTask' objects>
+           └ PregelExecutableTask(name='generate', input={'run_id': '93dbd933-e0c1-4fee-8982-b58fa447b69a', 'file_path': 'C:\\Users\\shaik...
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            │       │   │    │       │      │         └ {}
+            │       │   │    │       │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+            │       │   │    │       └ {'run_id': '93dbd933-e0c1-4fee-8982-b58fa447b69a', 'file_path': 'C:\\Users\\shaik\\AppData\\Local\\Temp\\tableau_gen_hituwy0j...
+            │       │   │    └ <function RunnableCallable.invoke at 0x000002374D1885E0>
+            │       │   └ generate(tags=None, recurse=True, explode_args=False, func_accepts={})
+            │       └ <method 'run' of '_contextvars.Context' objects>
+            └ <_contextvars.Context object at 0x000002374D006080>
+  File "c:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          │    │     │       └ {}
+          │    │     └ ({'run_id': '93dbd933-e0c1-4fee-8982-b58fa447b69a', 'file_path': 'C:\\Users\\shaik\\AppData\\Local\\Temp\\tableau_gen_hituwy0...
+          │    └ <function generate_node at 0x000002374D2A0D60>
+          └ generate(tags=None, recurse=True, explode_args=False, func_accepts={})
+
+  File "C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\scripts\workflow.py", line 757, in generate_node
+    from scripts.tableau_workbook_generator import TableauWorkbookGenerator
+
+ModuleNotFoundError: No module named 'scripts.tableau_workbook_generator'
+During task with name 'generate' and id 'dbbb33d4-f11f-b89e-0816-fe6403e0b5e7'

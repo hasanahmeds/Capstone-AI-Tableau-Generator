@@ -1,0 +1,47 @@
+{
+  "dataset_id": "b82854ce-cfce-42b3-9398-a5246855c919",
+  "generated_at": "2026-04-23 18:06:07.976809",
+  "missing": {
+    "by_column": {
+      "Postal Code": 11
+    },
+    "total_missing": 11,
+    "missing_ratio_overall": 0.0001
+  },
+  "duplicates": {
+    "duplicate_row_count": 0,
+    "duplicate_row_ratio": 0.0
+  },
+  "outliers": {
+    "method": "iqr",
+    "by_column": {
+      "Sales": 1145
+    },
+    "bounds_by_column": {
+      "Row ID": {
+        "low": -4898.5,
+        "high": 14699.5
+      },
+      "Postal Code": {
+        "low": -76954.5,
+        "high": 190185.5
+      },
+      "Sales": {
+        "low": -272.7875,
+        "high": 500.6405
+      }
+    }
+  },
+  "empty_columns": [],
+  "constant_columns": [
+    "Country"
+  ],
+  "type_issues": [],
+  "quality_score": 96.99,
+  "score_scale": "0_100",
+  "warnings": [
+    "1145 outlier values detected across 1 numeric column(s).",
+    "Constant (single-value) columns: ['Country']"
+  ],
+  "errors": []
+}

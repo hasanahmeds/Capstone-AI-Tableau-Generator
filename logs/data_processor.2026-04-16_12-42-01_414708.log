@@ -1,0 +1,40 @@
+2026-04-16 12:42:01 | INFO     | data_processor — Loading file: %s
+2026-04-16 12:42:01 | INFO     | data_processor — Loaded %d rows × %d columns from '%s'
+2026-04-16 12:42:01 | INFO     | data_processor — Validating DataFrame (%d rows × %d cols)
+2026-04-16 12:42:04 | INFO     | data_processor — Validation complete — numeric: %d, categorical: %d, datetime: %d, boolean: %d, text: %d, unknown: %d
+2026-04-16 12:42:04 | INFO     | data_processor — Assessing data quality for dataset '%s'
+2026-04-16 12:42:04 | INFO     | data_processor — Quality score: %.1f / 100
+2026-04-16 12:42:04 | INFO     | data_processor — Profiling dataset '%s'
+2026-04-16 12:42:04 | INFO     | data_processor — Profiling complete — %d column profiles generated.
+2026-04-16 13:03:33 | INFO     | data_processor — Loading file: %s
+2026-04-16 13:03:33 | INFO     | data_processor — Loaded %d rows × %d columns from '%s'
+2026-04-16 13:03:33 | INFO     | data_processor — Validating DataFrame (%d rows × %d cols)
+2026-04-16 13:03:36 | INFO     | data_processor — Validation complete — numeric: %d, categorical: %d, datetime: %d, boolean: %d, text: %d, unknown: %d
+2026-04-16 13:03:36 | INFO     | data_processor — Assessing data quality for dataset '%s'
+2026-04-16 13:03:36 | INFO     | data_processor — Quality score: %.1f / 100
+2026-04-16 13:03:37 | INFO     | data_processor — Profiling dataset '%s'
+2026-04-16 13:03:37 | INFO     | data_processor — Profiling complete — %d column profiles generated.
+2026-04-16 13:26:43 | INFO     | data_processor — Loading file: %s
+2026-04-16 13:26:43 | INFO     | data_processor — Loaded %d rows × %d columns from '%s'
+2026-04-16 13:26:43 | INFO     | data_processor — Validating DataFrame (%d rows × %d cols)
+2026-04-16 13:26:46 | INFO     | data_processor — Validation complete — numeric: %d, categorical: %d, datetime: %d, boolean: %d, text: %d, unknown: %d
+2026-04-16 13:26:46 | INFO     | data_processor — Assessing data quality for dataset '%s'
+2026-04-16 13:26:46 | INFO     | data_processor — Quality score: %.1f / 100
+2026-04-16 13:26:46 | INFO     | data_processor — Profiling dataset '%s'
+2026-04-16 13:26:47 | INFO     | data_processor — Profiling complete — %d column profiles generated.
+2026-04-16 13:32:53 | INFO     | data_processor — Loading file: %s
+2026-04-16 13:32:53 | INFO     | data_processor — Loaded %d rows × %d columns from '%s'
+2026-04-16 13:32:53 | INFO     | data_processor — Validating DataFrame (%d rows × %d cols)
+2026-04-16 13:32:56 | INFO     | data_processor — Validation complete — numeric: %d, categorical: %d, datetime: %d, boolean: %d, text: %d, unknown: %d
+2026-04-16 13:32:56 | INFO     | data_processor — Assessing data quality for dataset '%s'
+2026-04-16 13:32:56 | INFO     | data_processor — Quality score: %.1f / 100
+2026-04-16 13:32:57 | INFO     | data_processor — Profiling dataset '%s'
+2026-04-16 13:32:57 | INFO     | data_processor — Profiling complete — %d column profiles generated.
+2026-04-16 13:41:30 | INFO     | data_processor — Loading file: %s
+2026-04-16 13:41:30 | INFO     | data_processor — Loaded %d rows × %d columns from '%s'
+2026-04-16 13:41:30 | INFO     | data_processor — Validating DataFrame (%d rows × %d cols)
+2026-04-16 13:41:33 | INFO     | data_processor — Validation complete — numeric: %d, categorical: %d, datetime: %d, boolean: %d, text: %d, unknown: %d
+2026-04-16 13:41:33 | INFO     | data_processor — Assessing data quality for dataset '%s'
+2026-04-16 13:41:33 | INFO     | data_processor — Quality score: %.1f / 100
+2026-04-16 13:41:33 | INFO     | data_processor — Profiling dataset '%s'
+2026-04-16 13:41:33 | INFO     | data_processor — Profiling complete — %d column profiles generated.

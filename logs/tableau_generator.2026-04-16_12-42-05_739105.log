@@ -1,0 +1,55 @@
+2026-04-16 12:42:05 | INFO     | tableau_generator — Date fallback: 'Order Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 12:42:05 | INFO     | tableau_generator — Date fallback: 'Ship Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 12:42:05 | INFO     | tableau_generator — TableauWorkbookGenerator ready — 8 visuals, 9800 rows × 18 cols, detected date cols: ['Order Date', 'Ship Date']
+2026-04-16 12:42:05 | INFO     | tableau_generator — Planned 8 worksheets.
+2026-04-16 12:42:05 | INFO     | tableau_generator — Workbook XML structure assembled successfully.
+2026-04-16 12:42:05 | INFO     | tableau_generator — Validation passed — no issues found.
+2026-04-16 12:42:05 | INFO     | tableau_generator — Exported .twb → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twb (26.4 KB)
+2026-04-16 12:42:08 | INFO     | tableau_generator — Generated Hyper extract: C:\Users\shaik\AppData\Local\Temp\tmpg729tuwh\Extract.hyper (9800 rows × 18 cols)
+2026-04-16 12:42:08 | INFO     | tableau_generator — Injected extract element pointing to Data/Extracts/Extract.hyper
+2026-04-16 12:42:08 | INFO     | tableau_generator — Removed extract element from in-memory XML tree
+2026-04-16 12:42:08 | INFO     | tableau_generator — Exported .twbx → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twbx (777.1 KB, with Hyper extract)
+2026-04-16 13:03:38 | INFO     | tableau_generator — Date fallback: 'Order Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:03:38 | INFO     | tableau_generator — Date fallback: 'Ship Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:03:38 | INFO     | tableau_generator — TableauWorkbookGenerator ready — 2 visuals, 9800 rows × 18 cols, detected date cols: ['Order Date', 'Ship Date']
+2026-04-16 13:03:38 | INFO     | tableau_generator — Planned 2 worksheets.
+2026-04-16 13:03:38 | INFO     | tableau_generator — Workbook XML structure assembled successfully.
+2026-04-16 13:03:38 | INFO     | tableau_generator — Validation passed — no issues found.
+2026-04-16 13:03:38 | INFO     | tableau_generator — Exported .twb → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twb (18.7 KB)
+2026-04-16 13:03:39 | INFO     | tableau_generator — Generated Hyper extract: C:\Users\shaik\AppData\Local\Temp\tmpi4kusthu\Extract.hyper (9800 rows × 18 cols)
+2026-04-16 13:03:39 | INFO     | tableau_generator — Injected extract element pointing to Data/Extracts/Extract.hyper
+2026-04-16 13:03:39 | INFO     | tableau_generator — Removed extract element from in-memory XML tree
+2026-04-16 13:03:39 | INFO     | tableau_generator — Exported .twbx → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twbx (776.7 KB, with Hyper extract)
+2026-04-16 13:26:47 | INFO     | tableau_generator — Date fallback: 'Order Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:26:47 | INFO     | tableau_generator — Date fallback: 'Ship Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:26:47 | INFO     | tableau_generator — TableauWorkbookGenerator ready — 8 visuals, 9800 rows × 18 cols, detected date cols: ['Order Date', 'Ship Date']
+2026-04-16 13:26:47 | INFO     | tableau_generator — Planned 8 worksheets.
+2026-04-16 13:26:47 | INFO     | tableau_generator — Workbook XML structure assembled successfully.
+2026-04-16 13:26:47 | INFO     | tableau_generator — Validation passed — no issues found.
+2026-04-16 13:26:48 | INFO     | tableau_generator — Exported .twb → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twb (27.1 KB)
+2026-04-16 13:26:48 | INFO     | tableau_generator — Generated Hyper extract: C:\Users\shaik\AppData\Local\Temp\tmpswhxhuaf\Extract.hyper (9800 rows × 18 cols)
+2026-04-16 13:26:48 | INFO     | tableau_generator — Injected extract element pointing to Data/Extracts/Extract.hyper
+2026-04-16 13:26:49 | INFO     | tableau_generator — Removed extract element from in-memory XML tree
+2026-04-16 13:26:49 | INFO     | tableau_generator — Exported .twbx → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twbx (777.2 KB, with Hyper extract)
+2026-04-16 13:32:58 | INFO     | tableau_generator — Date fallback: 'Order Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:32:58 | INFO     | tableau_generator — Date fallback: 'Ship Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:32:58 | INFO     | tableau_generator — TableauWorkbookGenerator ready — 8 visuals, 9800 rows × 18 cols, detected date cols: ['Order Date', 'Ship Date']
+2026-04-16 13:32:58 | INFO     | tableau_generator — Planned 8 worksheets.
+2026-04-16 13:32:58 | INFO     | tableau_generator — Workbook XML structure assembled successfully.
+2026-04-16 13:32:58 | INFO     | tableau_generator — Validation passed — no issues found.
+2026-04-16 13:32:58 | INFO     | tableau_generator — Exported .twb → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twb (27.3 KB)
+2026-04-16 13:32:59 | INFO     | tableau_generator — Generated Hyper extract: C:\Users\shaik\AppData\Local\Temp\tmpy6ug3fsk\Extract.hyper (9800 rows × 18 cols)
+2026-04-16 13:32:59 | INFO     | tableau_generator — Injected extract element pointing to Data/Extracts/Extract.hyper
+2026-04-16 13:32:59 | INFO     | tableau_generator — Removed extract element from in-memory XML tree
+2026-04-16 13:32:59 | INFO     | tableau_generator — Exported .twbx → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twbx (777.2 KB, with Hyper extract)
+2026-04-16 13:41:34 | INFO     | tableau_generator — Date fallback: 'Order Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:41:34 | INFO     | tableau_generator — Date fallback: 'Ship Date' looks like a date (100% parse success) — will use for time-series charts but keeping string type in datasource
+2026-04-16 13:41:34 | INFO     | tableau_generator — TableauWorkbookGenerator ready — 8 visuals, 9800 rows × 18 cols, detected date cols: ['Order Date', 'Ship Date']
+2026-04-16 13:41:34 | INFO     | tableau_generator — Planned 8 worksheets.
+2026-04-16 13:41:34 | INFO     | tableau_generator — Workbook XML structure assembled successfully.
+2026-04-16 13:41:34 | INFO     | tableau_generator — Validation passed — no issues found.
+2026-04-16 13:41:34 | INFO     | tableau_generator — Exported .twb → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twb (27.3 KB)
+2026-04-16 13:41:35 | INFO     | tableau_generator — Generated Hyper extract: C:\Users\shaik\AppData\Local\Temp\tmpkii1p8b5\Extract.hyper (9800 rows × 18 cols)
+2026-04-16 13:41:35 | INFO     | tableau_generator — Injected extract element pointing to Data/Extracts/Extract.hyper
+2026-04-16 13:41:35 | INFO     | tableau_generator — Removed extract element from in-memory XML tree
+2026-04-16 13:41:35 | INFO     | tableau_generator — Exported .twbx → C:\Users\shaik\Desktop\Course Material\Semester3\CS896_Data_Science_Capstone_Project\Project_Code\output\train_dashboard.twbx (777.2 KB, with Hyper extract)

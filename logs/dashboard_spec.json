@@ -1,0 +1,104 @@
+{
+  "name": "Auto Generated Dashboard",
+  "visuals": [
+    {
+      "chart_type": "histogram",
+      "title": "Distribution of Sales",
+      "x": "Sales",
+      "y": null,
+      "aggregation": null,
+      "group_by": null,
+      "rationale": "1 metric \u2192 Distribution chart.",
+      "confidence": 0.75
+    },
+    {
+      "chart_type": "treemap",
+      "title": "Sales by Order Date",
+      "x": "Order Date",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "Hierarchical breakdown \u2192 Treemap.",
+      "confidence": 0.72
+    },
+    {
+      "chart_type": "pie",
+      "title": "Sales by Ship Mode",
+      "x": "Ship Mode",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "Part-to-whole breakdown (few categories).",
+      "confidence": 0.72
+    },
+    {
+      "chart_type": "bar",
+      "title": "Sales by Customer Name",
+      "x": "Customer Name",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "Top-N bar chart (apply filter for readability).",
+      "confidence": 0.72
+    },
+    {
+      "chart_type": "pie",
+      "title": "Sales by Segment",
+      "x": "Segment",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "Part-to-whole breakdown (few categories).",
+      "confidence": 0.72
+    },
+    {
+      "chart_type": "pie",
+      "title": "Sales by Category",
+      "x": "Category",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "Part-to-whole breakdown (few categories).",
+      "confidence": 0.72
+    },
+    {
+      "chart_type": "bar",
+      "title": "Sales by Sub-Category",
+      "x": "Sub-Category",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "1 category + 1 metric \u2192 Bar chart.",
+      "confidence": 0.72
+    },
+    {
+      "chart_type": "bar",
+      "title": "Sales by Product Name",
+      "x": "Product Name",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "Top-N bar chart (apply filter for readability).",
+      "confidence": 0.72
+    },
+    {
+      "chart_type": "line",
+      "title": "Sales over time",
+      "x": "Order Date",
+      "y": "Sales",
+      "aggregation": "sum",
+      "group_by": null,
+      "rationale": "Auto-injected by workbook generator (date column fallback).",
+      "confidence": 0.7
+    }
+  ],
+  "layout": {
+    "type": "grid",
+    "columns": 2,
+    "order": [
+      0,
+      1
+    ]
+  },
+  "global_filters": null
+}
