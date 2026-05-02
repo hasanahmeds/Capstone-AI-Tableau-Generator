@@ -361,5 +361,4 @@ Intermediate results are dumped to `logs/` as JSON for debugging:
 - Geographic visualizations (maps) aren't generated yet — the column detection identifies geographic columns, but map chart generation isn't implemented.
 - The .twbx Hyper extract requires pantab and tableauhyperapi, which need platform-specific binaries.
 - Only two of the six LLM prompt templates are currently used in production. The visualization, quality, narrative, and layout prompts are built but not yet wired into the pipeline.
-- The dashboard layout is a simple grid (2 columns). Pixel-level layout optimization is a future goal.
 
