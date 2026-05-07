@@ -48,7 +48,7 @@ cd Capstone-AI-Tableau-Generator
 
 python -m venv venv
 
-venv\Scripts\activate 
+venv\scripts\activate 
 
 # Install the required packages:
 pip install -r requirements.txt
