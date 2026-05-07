@@ -61,16 +61,3 @@ python -m streamlit run app.py
 ```bash
 streamlit run app.py
 ```
-
-
-## Output
-
-The pipeline generates files in the `output/` directory:
-
-- **`<dataset>_dashboard.twb`** — Plain Tableau workbook XML. Open directly in Tableau Desktop. Points to the original data file via a relative path.
-- **`<dataset>_dashboard.twbx`** — Packaged workbook. Contains the .twb, the source CSV, and a .hyper extract. Self-contained and portable — you can share it without sending the data file separately.
-
-Intermediate results are dumped to `logs/` as JSON for debugging:
-- `output_results.json` — Schema, quality report, profile report
-- `output_dashboard_analyzer.json` — Analysis and KPI recommendations
-- `recommendations_output.json` — Visualization specs
