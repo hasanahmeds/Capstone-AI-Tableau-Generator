@@ -1,0 +1,22 @@
+2026-05-06 22:30:01 | WARNING  | workflow — Could not save graph PNG: %s
+2026-05-06 22:30:01 | INFO     | workflow — validate_node: starting data validation
+2026-05-06 22:30:01 | INFO     | workflow — validate_node: rows=%d  cols=%d  quality=%.1f
+2026-05-06 22:30:01 | INFO     | workflow — profile_node: building column profiles
+2026-05-06 22:30:02 | INFO     | workflow — profile_node: profiled %d columns
+2026-05-06 22:30:02 | INFO     | workflow — analyze_node: running analysis
+2026-05-06 22:30:23 | INFO     | workflow — analyze_node: found %d KPIs, domain=%s
+2026-05-06 22:30:23 | INFO     | workflow — recommend_node: selecting visualizations
+2026-05-06 22:30:23 | INFO     | workflow — recommend_node: %d charts — %s
+2026-05-06 22:30:23 | INFO     | workflow — generate_node: building workbook
+2026-05-06 22:30:23 | INFO     | workflow — generate_node: .twb written to %s
+2026-05-06 22:30:25 | INFO     | workflow — generate_node: .twbx written to %s
+2026-05-06 22:30:25 | INFO     | workflow — generate_node: workbook written to %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrapping up
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrote %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrote %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrote %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrote %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrote %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrote %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: wrote %s
+2026-05-06 22:30:25 | INFO     | workflow — finalize_node: status=%s  errors=%d

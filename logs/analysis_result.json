@@ -1,0 +1,294 @@
+{
+  "dataset_id": "afe4d5e5-5d29-4334-91cb-794939abed18",
+  "generated_at": "2026-05-07 03:30:23.783426",
+  "summary": "A transactional dataset tracking customer orders, product sales, and shipping logistics for a US-based retail operation.",
+  "kpis": [
+    {
+      "metric_name": "Total Sales",
+      "column": "Sales",
+      "aggregation": "sum",
+      "rationale": "The primary indicator of top-line revenue growth and overall business scale."
+    },
+    {
+      "metric_name": "Total Orders",
+      "column": "Order ID",
+      "aggregation": "count",
+      "rationale": "Measures transaction volume to understand market activity and operational demand."
+    },
+    {
+      "metric_name": "Average Order Value (AOV)",
+      "column": "Sales",
+      "aggregation": "sum",
+      "rationale": "Helps identify if revenue growth is driven by larger purchases or simply more frequent orders."
+    },
+    {
+      "metric_name": "Customer Reach",
+      "column": "Customer ID",
+      "aggregation": "count",
+      "rationale": "Tracks the size of the active customer base to evaluate market penetration."
+    },
+    {
+      "metric_name": "Average Shipping Time",
+      "column": "Order Date",
+      "aggregation": "avg",
+      "rationale": "A key operational efficiency metric that directly impacts customer satisfaction and logistics performance."
+    },
+    {
+      "metric_name": "Sales per Customer",
+      "column": "Sales",
+      "aggregation": "sum",
+      "rationale": "Indicates customer lifetime value and the effectiveness of cross-selling/up-selling strategies."
+    },
+    {
+      "metric_name": "Order Frequency",
+      "column": "Order ID",
+      "aggregation": "count",
+      "rationale": "Measures how often the average customer returns to make a purchase."
+    },
+    {
+      "metric_name": "Standard Class Utilization",
+      "column": "Ship Mode",
+      "aggregation": "count",
+      "rationale": "Analyzes shipping preference to optimize logistics costs and carrier contracts."
+    },
+    {
+      "metric_name": "Product Variety per Order",
+      "column": "Product ID",
+      "aggregation": "count",
+      "rationale": "Determines the complexity of orders and the breadth of product interest per transaction."
+    },
+    {
+      "metric_name": "Monthly Sales Trend",
+      "column": "Sales",
+      "aggregation": "sum",
+      "rationale": ""
+    },
+    {
+      "metric_name": "Quarterly Order Volume",
+      "column": "Order ID",
+      "aggregation": "count",
+      "rationale": ""
+    },
+    {
+      "metric_name": "Sales by Region",
+      "column": "Sales",
+      "aggregation": "sum",
+      "rationale": ""
+    },
+    {
+      "metric_name": "Sales by Segment",
+      "column": "Sales",
+      "aggregation": "sum",
+      "rationale": ""
+    },
+    {
+      "metric_name": "Category Performance",
+      "column": "Sales",
+      "aggregation": "sum",
+      "rationale": ""
+    }
+  ],
+  "suggested_chart_types": [
+    "line",
+    "bar",
+    "histogram"
+  ],
+  "business_domain": "Retail Sales",
+  "extra_metadata": {
+    "column_roles": {
+      "dimensions": [
+        "Ship Mode",
+        "Segment",
+        "Category",
+        "Sub-Category"
+      ],
+      "measures": [
+        "Sales"
+      ],
+      "temporal": [
+        "Order Date",
+        "Ship Date"
+      ],
+      "identifiers": [
+        "Row ID",
+        "Order ID",
+        "Customer ID",
+        "Product ID"
+      ],
+      "geographic": [
+        "Country",
+        "City",
+        "State",
+        "Postal Code",
+        "Region"
+      ]
+    },
+    "time_coverage": {
+      "has_time_dimension": true,
+      "time_column": "Order Date",
+      "estimated_range": "Multi-year coverage including 2017"
+    },
+    "key_entities": [
+      {
+        "entity_name": "Customer",
+        "id_column": "Customer ID",
+        "name_column": "Customer Name",
+        "estimated_cardinality": "793 unique"
+      },
+      {
+        "entity_name": "Product",
+        "id_column": "Product ID",
+        "name_column": "Product Name",
+        "estimated_cardinality": "1861 unique"
+      },
+      {
+        "entity_name": "Order",
+        "id_column": "Order ID",
+        "name_column": null,
+        "estimated_cardinality": "4922 unique"
+      }
+    ],
+    "raw_kpis": {
+      "primary_kpis": [
+        {
+          "name": "Total Sales",
+          "formula": "SUM([Sales])",
+          "source_columns": [
+            "Sales"
+          ],
+          "format": "$#,##0",
+          "business_rationale": "The primary indicator of top-line revenue growth and overall business scale."
+        },
+        {
+          "name": "Total Orders",
+          "formula": "COUNTD([Order ID])",
+          "source_columns": [
+            "Order ID"
+          ],
+          "format": "#,##0",
+          "business_rationale": "Measures transaction volume to understand market activity and operational demand."
+        },
+        {
+          "name": "Average Order Value (AOV)",
+          "formula": "SUM([Sales]) / COUNTD([Order ID])",
+          "source_columns": [
+            "Sales",
+            "Order ID"
+          ],
+          "format": "$#,##0.00",
+          "business_rationale": "Helps identify if revenue growth is driven by larger purchases or simply more frequent orders."
+        },
+        {
+          "name": "Customer Reach",
+          "formula": "COUNTD([Customer ID])",
+          "source_columns": [
+            "Customer ID"
+          ],
+          "format": "#,##0",
+          "business_rationale": "Tracks the size of the active customer base to evaluate market penetration."
+        },
+        {
+          "name": "Average Shipping Time",
+          "formula": "AVG(DATEDIFF('day', [Order Date], [Ship Date]))",
+          "source_columns": [
+            "Order Date",
+            "Ship Date"
+          ],
+          "format": "0.0 Days",
+          "business_rationale": "A key operational efficiency metric that directly impacts customer satisfaction and logistics performance."
+        }
+      ],
+      "secondary_metrics": [
+        {
+          "name": "Sales per Customer",
+          "formula": "SUM([Sales]) / COUNTD([Customer ID])",
+          "source_columns": [
+            "Sales",
+            "Customer ID"
+          ],
+          "format": "$#,##0.00",
+          "business_rationale": "Indicates customer lifetime value and the effectiveness of cross-selling/up-selling strategies."
+        },
+        {
+          "name": "Order Frequency",
+          "formula": "COUNTD([Order ID]) / COUNTD([Customer ID])",
+          "source_columns": [
+            "Order ID",
+            "Customer ID"
+          ],
+          "format": "0.00",
+          "business_rationale": "Measures how often the average customer returns to make a purchase."
+        },
+        {
+          "name": "Standard Class Utilization",
+          "formula": "COUNT(IF [Ship Mode] = 'Standard Class' THEN [Order ID] END) / COUNT([Order ID])",
+          "source_columns": [
+            "Ship Mode",
+            "Order ID"
+          ],
+          "format": "0.0%",
+          "business_rationale": "Analyzes shipping preference to optimize logistics costs and carrier contracts."
+        },
+        {
+          "name": "Product Variety per Order",
+          "formula": "COUNTD([Product ID]) / COUNTD([Order ID])",
+          "source_columns": [
+            "Product ID",
+            "Order ID"
+          ],
+          "format": "0.0",
+          "business_rationale": "Determines the complexity of orders and the breadth of product interest per transaction."
+        }
+      ],
+      "trend_metrics": [
+        {
+          "name": "Monthly Sales Trend",
+          "formula": "SUM([Sales])",
+          "time_grain": "month",
+          "source_columns": [
+            "Sales",
+            "Order Date"
+          ]
+        },
+        {
+          "name": "Quarterly Order Volume",
+          "formula": "COUNTD([Order ID])",
+          "time_grain": "quarter",
+          "source_columns": [
+            "Order ID",
+            "Order Date"
+          ]
+        }
+      ],
+      "comparative_metrics": [
+        {
+          "name": "Sales by Region",
+          "measure": "SUM([Sales])",
+          "compare_by": "Region",
+          "source_columns": [
+            "Sales",
+            "Region"
+          ]
+        },
+        {
+          "name": "Sales by Segment",
+          "measure": "SUM([Sales])",
+          "compare_by": "Segment",
+          "source_columns": [
+            "Sales",
+            "Segment"
+          ]
+        },
+        {
+          "name": "Category Performance",
+          "measure": "SUM([Sales])",
+          "compare_by": "Category",
+          "source_columns": [
+            "Sales",
+            "Category"
+          ]
+        }
+      ]
+    }
+  }
+}

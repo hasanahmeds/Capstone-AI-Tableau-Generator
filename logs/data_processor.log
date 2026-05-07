@@ -1,0 +1,8 @@
+2026-05-06 22:30:01 | INFO     | data_processor — Loading file: %s
+2026-05-06 22:30:01 | INFO     | data_processor — Loaded %d rows × %d columns from '%s'
+2026-05-06 22:30:01 | INFO     | data_processor — Validating DataFrame (%d rows × %d cols)
+2026-05-06 22:30:01 | INFO     | data_processor — Validation complete — numeric: %d, categorical: %d, datetime: %d, boolean: %d, text: %d, unknown: %d
+2026-05-06 22:30:01 | INFO     | data_processor — Assessing data quality for dataset '%s'
+2026-05-06 22:30:01 | INFO     | data_processor — Quality score: %.1f / 100
+2026-05-06 22:30:02 | INFO     | data_processor — Profiling dataset '%s'
+2026-05-06 22:30:02 | INFO     | data_processor — Profiling complete — %d column profiles generated.

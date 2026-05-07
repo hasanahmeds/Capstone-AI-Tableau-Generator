@@ -1,0 +1,8 @@
+2026-05-06 22:30:02 | INFO     | dashboard_analyzer — DashboardAnalyzer initialized (LLM=enabled)
+2026-05-06 22:30:02 | INFO     | dashboard_analyzer — Running analyze()...
+2026-05-06 22:30:07 | INFO     | dashboard_analyzer — Gemini provider detected — routing to Google's OpenAI-compatible endpoint.
+2026-05-06 22:30:16 | INFO     | dashboard_analyzer — LLM responded in 8.8s
+2026-05-06 22:30:16 | INFO     | dashboard_analyzer — LLM analyze() done — domain: Retail Sales
+2026-05-06 22:30:16 | INFO     | dashboard_analyzer — Running recommend_kpis()...
+2026-05-06 22:30:23 | INFO     | dashboard_analyzer — LLM responded in 7.1s
+2026-05-06 22:30:23 | INFO     | dashboard_analyzer — LLM recommend_kpis() done — 5 primary, 4 secondary
