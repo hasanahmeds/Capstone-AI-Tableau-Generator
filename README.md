@@ -52,7 +52,7 @@ python -m venv venv
 venv\Scripts\activate 
 
 # Install the required packages:
-python -m pip install -r 0.requirements.txt
+python -m pip install -r requirements.txt
 
 
 # Run the Streamlit app:
