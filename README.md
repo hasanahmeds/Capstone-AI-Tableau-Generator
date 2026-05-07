@@ -23,6 +23,11 @@ project/
 │   ├── visualization_recommender.py    # Rule-based chart type selection
 │   ├── tableau_workbook_generator.py   # Tableau XML generation (~1500 lines)
 │   └── workflow.py                     # LangGraph pipeline orchestration
+|   └── test_dashboard_analyzer.py      # Unit Test file
+|   └── test_data_processor.py          # Unit Test file
+|   └── test_main_file_state.py          # Unit Test file
+|   └── test_visualization_recommender.py  # Unit Test file
+|   └── test_workflow_end_to_end.py      # Unit Test file
 ├── output/                             # Generated .twb and .twbx files land here
 ├── logs/                               # Per-module log files + intermediate JSON
 └── requirements.txt
