@@ -52,29 +52,7 @@ python -m pip install -r 0.requirements.txt
 python -m streamlit run app.py
 ```
 
-### Core Dependencies
 
-| Package | What It's For |
-|---------|--------------|
-| `pandas` | DataFrame operations, CSV/Excel reading |
-| `numpy` | Numeric computations in profiling and quality checks |
-| `pydantic` | Data validation for every model in schemas.py |
-| `langgraph` | Pipeline orchestration (state graph, node chaining) |
-| `loguru` | Structured logging with per-module file rotation |
-| `streamlit` | Web interface |
-| `openai` | LLM API client (works with Azure OpenAI and Gemini via OpenAI-compatible endpoints) |
-
-### Optional Dependencies
-
-| Package | What It's For |
-|---------|--------------|
-| `pantab` | Generating .hyper extracts for .twbx files |
-| `tableauhyperapi` | Required by pantab for Hyper file creation |
-| `openpyxl` | Fallback Excel reader |
-
-If pantab isn't installed, the pipeline still works — it just skips .twbx generation and produces only the .twb file.
-
----
 
 ## Usage
 
