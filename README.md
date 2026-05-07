@@ -52,11 +52,11 @@ python -m venv venv
 venv\Scripts\activate 
 
 # Install the required packages:
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 
 
-# Run the Streamlit app:
-python -m streamlit run app.py
+# Run the Streamlit app(open app.py in vscode)
+streamlit run app.py
 ```
 
 
