@@ -35,17 +35,18 @@ project/
 
 ## How to Run the Project
 
-1. Clone or download the project.
+1.  download the project.
 
-2. Open the project folder in terminal:
+2. Open the project folder in terminal in VSCode
 
 ```bash
 cd Capstone-AI-Tableau-Generator
+python -m venv venv
+# venv\Scripts\activate 
 
 # Install the required packages:
 python -m pip install -r 0.requirements.txt
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate   # Windows
+
 
 # Run the Streamlit app:
 python -m streamlit run app.py
