@@ -183,18 +183,22 @@ Logging is wired into both stdlib and Loguru so every module's output shows up i
 
 ## Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/<your-username>/tableau-dashboard-generator.git
-cd tableau-dashboard-generator
+## How to Run the Project
 
-# Create a virtual environment (recommended)
-python -m venv venv
+1. Clone or download the project.
+
+2. Open the project folder in terminal:
+
+```bash
+cd Capstone-AI-Tableau-Generator
+
+# Install the required packages:
+python -m pip install -r 0.requirements.txt
 source venv/bin/activate  # Linux/Mac
 # venv\Scripts\activate   # Windows
 
-# Install dependencies
-pip install -r requirements.txt
+# Run the Streamlit app:
+python -m streamlit run app.py
 ```
 
 ### Core Dependencies
